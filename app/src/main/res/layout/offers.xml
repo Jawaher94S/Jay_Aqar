@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/property">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- ToDo: try to add frameLayout insted of linearLayout to create dynamic fragment -->
+
+
+                <include
+                    android:id="@+id/all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/offers_list"
+                    ></include>
+
+                <include
+                    android:id="@+id/rents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/offers_list"
+                    ></include>
+
+                <include
+                    android:id="@+id/sales"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/offers_list"
+                    ></include>
+               </FrameLayout>
+     </LinearLayout>
+    </TabHost>
+</LinearLayout>

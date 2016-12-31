@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JayAqar</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">sign up</string>
+    <string name="gust">Gust</string>
+    <string name="search">Search</string>
+    <string name="new_account">Create New Account</string>
+
+    <!-- ToDo: add array of cities name-->
+</resources>
